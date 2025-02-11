@@ -1,0 +1,45 @@
+#iconsContainer {
+	display: flex;
+	justify-items: center;
+	align-items: center;
+	margin-bottom: 2rem;
+	gap: 1rem;
+}
+
+#iconsContainer svg {
+	font-size: 1.6rem;
+}
+
+#iconsContainer svg.activeIcon {
+	color: #8b2564;
+}
+
+span.activeSpan {
+	font-weight: 700;
+}
+
+#identificacaoIconContainer,
+#avaliacaoIconContainer,
+#envioIconContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+#identificacaoIconAndLabel,
+#avaliacaoIconAndLabel,
+#envioIconAndLabel {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.divisorLine {
+	border: 0;
+	border-top: 2px solid #b1b1b1; /* cor da linha */
+	width: 100px; /* largura da linha */
+	margin: 10px 0; /* distâncias da linha */
+	align-self: flex-start;
+}

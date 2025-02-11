@@ -1,0 +1,9 @@
+#mainContainer {
+	display: flex;
+	flex-direction: column;
+	justify-items: center;
+	align-items: center;
+	background-color: #fff;
+	padding: 2rem 0;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}

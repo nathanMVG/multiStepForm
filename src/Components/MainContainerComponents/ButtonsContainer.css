@@ -1,0 +1,13 @@
+#buttonsContainer {
+	display: flex;
+	gap: 1rem;
+	margin-top: 2rem;
+}
+#buttonsContainer button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex: 1;
+	cursor: pointer;
+	padding: 0.5rem;
+}
