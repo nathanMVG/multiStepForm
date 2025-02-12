@@ -1,0 +1,47 @@
+#emotionsContainer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 1.5rem;
+	margin-bottom: 1.5rem;
+}
+
+#insatisfeitoIconAndLabel,
+#poderiaSerMelhorIconAndLabel,
+#satisfeitoIconAndLabel,
+#muitoSatisfeitoIconAndLabel {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#emotionsContainer svg {
+	font-size: 2.5rem;
+	cursor: pointer;
+}
+
+#emotionsContainer span {
+	font-size: 0.8rem;
+}
+
+#avaliationLabel {
+	font-weight: 700;
+	margin-bottom: 0.3rem;
+}
+
+#avaliationComment {
+	resize: none;
+	width: 100%;
+	min-height: 100px;
+	padding: 0.5rem;
+}
+
+.activeEmotion {
+	color: #8b2564;
+}
+
+.activeLabel {
+	font-weight: 700;
+}

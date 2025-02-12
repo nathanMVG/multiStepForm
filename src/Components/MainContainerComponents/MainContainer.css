@@ -4,6 +4,9 @@
 	justify-items: center;
 	align-items: center;
 	background-color: #fff;
-	padding: 2rem 0;
+	padding: 2rem;
 	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	min-height: 400px;
+	max-width: 600px;
+	margin: 0 auto;
 }

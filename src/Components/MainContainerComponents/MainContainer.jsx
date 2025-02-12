@@ -13,21 +13,26 @@ const MainContainer = ({
 	setName,
 	email,
 	setEmail,
+	comment,
+	setComment,
+	avaliation,
+	setAvaliation,
 }) => {
 	const stepsArray = [IdentificationStep, AvaliationStep, SendStep];
 
 	const CurrentStep = stepsArray[currentStepIndex];
 
+	const stepProps = [
+		{ name, setName, email, setEmail }, // Props para IdentificationStep
+		{ comment, setComment, avaliation, setAvaliation }, // Props para AvaliationStep
+		{ name, email, comment, avaliation }, // Props para SendStep
+	];
+
 	return (
 		<div id="mainContainer">
 			<IconsContainer currentStepIndex={currentStepIndex} />
 
-			<CurrentStep
-				name={name}
-				setName={setName}
-				email={email}
-				setEmail={setEmail}
-			/>
+			<CurrentStep {...stepProps[currentStepIndex]} />
 
 			<ButtonsContainer
 				stepsArray={stepsArray}

@@ -2,7 +2,7 @@ import "./IdentificationStep.css";
 
 const IdentificationStep = ({ name, setName, email, setEmail }) => {
 	return (
-		<div id="IdentificationStep">
+		<div id="identificationStep">
 			<form>
 				<label htmlFor="nameInput">
 					<span>Nome</span>

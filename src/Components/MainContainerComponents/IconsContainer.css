@@ -3,7 +3,6 @@
 	justify-items: center;
 	align-items: center;
 	margin-bottom: 2rem;
-	gap: 1rem;
 }
 
 #iconsContainer svg {
@@ -38,8 +37,6 @@ span.activeSpan {
 
 .divisorLine {
 	border: 0;
-	border-top: 2px solid #b1b1b1; /* cor da linha */
-	width: 100px; /* largura da linha */
-	margin: 10px 0; /* distâncias da linha */
-	align-self: flex-start;
+	border-top: 2px solid #b1b1b1;
+	width: 10vw;
 }

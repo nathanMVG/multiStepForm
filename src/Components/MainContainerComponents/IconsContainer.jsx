@@ -25,7 +25,7 @@ const IconsContainer = ({ currentStepIndex }) => {
 				const formattedLabel = stringFormatter(step.label);
 
 				return (
-					<div key={steps.label} id={`${formattedLabel}IconContainer`}>
+					<div key={step.label} id={`${formattedLabel}IconContainer`}>
 						<div id={`${formattedLabel}IconAndLabel`}>
 							<step.icon className={iconClass} />
 							<span className={spanClass}>{step.label}</span>

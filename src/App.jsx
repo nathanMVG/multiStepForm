@@ -8,6 +8,8 @@ function App() {
 	const [currentStepIndex, setCurrentStepIndex] = useState(0);
 	const [name, setName] = useState("");
 	const [email, setEmail] = useState("");
+	const [avaliation, setAvaliation] = useState("");
+	const [comment, setComment] = useState("");
 
 	return (
 		<>
@@ -26,6 +28,10 @@ function App() {
 					setName={setName}
 					email={email}
 					setEmail={setEmail}
+					comment={comment}
+					setComment={setComment}
+					avaliation={avaliation}
+					setAvaliation={setAvaliation}
 				/>
 			</main>
 		</>
