@@ -7,8 +7,21 @@ const ButtonsContainer = ({
 	stepsArray,
 	currentStepIndex,
 	setCurrentStepIndex,
+	name,
+	email,
+	errorMessage,
+	setErrorMessage,
+	errorTrigger,
+	setErrorTrigger,
 }) => {
 	const nextBtnHandler = () => {
+		if (currentStepIndex === 0) {
+			if (!name || !email) {
+				setErrorMessage("Preencha todos os campos");
+				setErrorTrigger((prev) => prev + 1);
+				return;
+			}
+		}
 		if (currentStepIndex !== stepsArray.length - 1) {
 			setCurrentStepIndex((previous) => previous + 1);
 		}

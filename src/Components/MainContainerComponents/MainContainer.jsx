@@ -17,6 +17,10 @@ const MainContainer = ({
 	setComment,
 	avaliation,
 	setAvaliation,
+	errorMessage,
+	setErrorMessage,
+	errorTrigger,
+	setErrorTrigger,
 }) => {
 	const stepsArray = [IdentificationStep, AvaliationStep, SendStep];
 
@@ -38,6 +42,12 @@ const MainContainer = ({
 				stepsArray={stepsArray}
 				currentStepIndex={currentStepIndex}
 				setCurrentStepIndex={setCurrentStepIndex}
+				name={name}
+				email={email}
+				errorMessage={errorMessage}
+				setErrorMessage={setErrorMessage}
+				errorTrigger={errorTrigger}
+				setErrorTrigger={setErrorTrigger}
 			/>
 		</div>
 	);
