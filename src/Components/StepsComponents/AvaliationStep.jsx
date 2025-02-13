@@ -60,4 +60,5 @@ const AvaliationStep = ({ comment, setComment, avaliation, setAvaliation }) => {
 	);
 };
 
+AvaliationStep.displayName = "avaliation";
 export default AvaliationStep;

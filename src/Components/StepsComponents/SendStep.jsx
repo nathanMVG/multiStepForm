@@ -27,4 +27,5 @@ const SendStep = ({ name, email, comment, avaliation }) => {
 	);
 };
 
+SendStep.displayName = "send";
 export default SendStep;

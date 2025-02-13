@@ -1,6 +1,14 @@
 import "./IdentificationStep.css";
 
 const IdentificationStep = ({ name, setName, email, setEmail }) => {
+	const nameRealTimeValidator = (e) => {
+		const formattedName = e.target.value
+			.replace(/[^a-zA-ZáéíóúÁÉÍÓÚãõâêîôûàèìòùç\s]/g, "") // Remove caracteres não alfabéticos e acentuados, exceto espaços
+			.toLowerCase()
+			.replace(/(?:^|\s)\S/g, (match) => match.toUpperCase()); // Converte a primeira letra de cada palavra para maiúscula
+		setName(formattedName);
+	};
+
 	return (
 		<div id="identificationStep">
 			<form>
@@ -12,7 +20,8 @@ const IdentificationStep = ({ name, setName, email, setEmail }) => {
 						placeholder="Digite o seu nome"
 						type="text"
 						value={name}
-						onChange={(e) => setName(e.target.value)}
+						onChange={nameRealTimeValidator}
+						maxLength={70}
 					/>
 				</label>
 				<label htmlFor="emailInput">
@@ -24,6 +33,7 @@ const IdentificationStep = ({ name, setName, email, setEmail }) => {
 						type="text"
 						value={email}
 						onChange={(e) => setEmail(e.target.value)}
+						maxLength={70}
 					/>
 				</label>
 			</form>
@@ -31,4 +41,5 @@ const IdentificationStep = ({ name, setName, email, setEmail }) => {
 	);
 };
 
+IdentificationStep.displayName = "identification";
 export default IdentificationStep;
