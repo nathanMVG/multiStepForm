@@ -1,9 +1,9 @@
 #buttonsContainer {
 	display: flex;
 	gap: 1rem;
-	margin-top: 2rem;
 	margin-top: auto; /* Empurra o último filho para o final */
 }
+
 #buttonsContainer button {
 	display: flex;
 	justify-content: center;
@@ -11,4 +11,27 @@
 	flex: 1;
 	cursor: pointer;
 	padding: 0.5rem;
+	background-color: #ffffff;
+	border: 1px solid rgb(209, 213, 219);
+	border-radius: 0.5rem;
+	color: #111827;
+	font-size: 0.875rem;
+	font-weight: 600;
+	line-height: 1.25rem;
+	padding: 0.75rem 1rem;
+	text-align: center;
+	-webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+	cursor: pointer;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-user-select: none;
+	-ms-touch-action: manipulation;
+	touch-action: manipulation;
+	transition: 0.5s;
+}
+
+#buttonsContainer button:hover {
+	background-color: #ececec;
 }

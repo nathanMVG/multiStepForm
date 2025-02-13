@@ -29,10 +29,10 @@ function App() {
 		<>
 			<header id="formHeader">
 				<h1>Deixe sua avaliação</h1>
-				<h2>
+				<p>
 					Ficamos felizes com sua compra. Utilize o formulário abaixo para
 					avaliar o produto
-				</h2>
+				</p>
 				<ErrorDisclaimer
 					errorMessage={errorMessage}
 					dynamicClass={dynamicClass}

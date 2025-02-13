@@ -1,0 +1,40 @@
+#sendStep {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+#sendStep h2,
+h3 {
+	color: #2b2b2b;
+	font-weight: 600;
+	align-self: center;
+}
+
+#sendStep p {
+	color: #2b2b2b;
+}
+
+#dataReview {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	color: #2b2b2b;
+}
+
+#dataReview svg {
+	font-size: 1.5rem;
+}
+
+#dataReview span {
+	font-weight: 600;
+}
+
+#commentReview {
+	word-break: break-word;
+	overflow-wrap: break-word;
+	display: inline;
+	white-space: normal;
+	margin-bottom: 2rem;
+	max-width: 450px;
+}

@@ -7,14 +7,17 @@
 
 #iconsContainer svg {
 	font-size: 1.6rem;
+	color: #2b2b2b;
 }
 
 #iconsContainer svg.activeIcon {
 	color: #8b2564;
 }
-
+span {
+	color: #2b2b2b;
+}
 span.activeSpan {
-	font-weight: 700;
+	font-weight: 600;
 }
 
 #identificacaoIconContainer,
@@ -23,7 +26,6 @@ span.activeSpan {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	gap: 0.5rem;
 }
 
 #identificacaoIconAndLabel,
@@ -31,12 +33,12 @@ span.activeSpan {
 #envioIconAndLabel {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: flex-start;
 	align-items: center;
 }
 
 .divisorLine {
 	border: 0;
 	border-top: 2px solid #b1b1b1;
-	width: 10vw;
+	width: 7vw;
 }
